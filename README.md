@@ -14,8 +14,12 @@ Installation:
 The hook can be overridden: ```$ git commit --no-verify```
 
 Currently, the following PEP8 codes are checked for:
+All PEP8 codes except for W504
+More info here: http://pycodestyle.pycqa.org/en/latest/intro.html#configuration
+If you find a discrepency between the linting rules set here and those in the Jenkins build,
+please create a PR.
 
-E111 indentation is not a multiple of four   
+~~E111 indentation is not a multiple of four   
 E125 continuation line does not distinguish itself from next logical line   
 E203 whitespace before ':'   
 E261 at least two spaces before inline comment   
@@ -27,7 +31,7 @@ E502 the backslash is redundant between brackets
 E701 multiple statements on one line (colon)   
 E711 comparison to None should be 'if cond is None:'   
 W291 trailing whitespace   
-W293 blank line contains whitespace   
+W293 blank line contains whitespace   ~~
 
 In case you want to modify the list of codes to ignore, edit the
 ```ignore_codes``` list in the pre-commit file.   
