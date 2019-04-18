@@ -16,7 +16,9 @@ The hook can be overridden: ```$ git commit --no-verify```
 Currently, the following PEP8 codes are checked for:
 
 All PEP8 codes except for W504
+
 More info here: http://pycodestyle.pycqa.org/en/latest/intro.html#configuration
+
 If you find a discrepency between the linting rules set here and those in the Jenkins build,
 please create a PR.
 
